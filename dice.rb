@@ -30,8 +30,14 @@ get("/dice/2/6") do # get the route
   # "<h1>2d6</h1> 
   # <p>#{outcome}<p>" # return the HTML
 
-  # View Template call
+  # Original View Template call
+  # erb(:two_six)
+  # With Wrapper call added
+  # erb(:two_six, { :layout => :wrapper })
+  # Updated back to just erb(:two_six) because we renamed wrapper.erb to layout.erb so it's automatically recognized
   erb(:two_six)
+
+
 end
 
 # 2 10-sided die
