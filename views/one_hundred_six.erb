@@ -1,0 +1,23 @@
+<!--/views/one_hundred_six.erb-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Each Dice Roll</title>
+</head>
+
+<body>
+  
+<h1>100d6</h1>
+
+<ul>
+  <% @rolls.each do |a_roll|%> <!--for each item in @rolls, print it in HTML-->
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+</ul>
+</body>
+
+</html>
